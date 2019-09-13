@@ -13,18 +13,36 @@
     }
     img{
       border-radius: 5px;
+      @media screen and (@phone){
+        width: 100%;
+      }
     }
   }
 
   .space-images {
-    .flex(wrap);
+    .flex(row, flex-start, flex-start, wrap);
     width: 100%;
-
+    @media screen and (@phone){
+      .flex(column, flex-start, flex-start, nowrap);
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media screen and (@phone){
+        width: 95%;
+      }
+      &.sky{
+        @media screen and (@phone){
+          display: none;
+        }
+      }
+      &.launch{
+        @media screen and (@phone){
+          display: none;
+        }
+      }
     }
   }
 
