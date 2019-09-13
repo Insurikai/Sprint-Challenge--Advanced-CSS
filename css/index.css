@@ -179,7 +179,6 @@ nav div {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: nowrap;
   width: 50%;
   margin: 2vh;
 }
@@ -272,8 +271,14 @@ footer {
   display: flex;
   flex-direction: center;
   justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: nowrap;
+}
+@media screen and (max-width: 500px) {
+  .home .walk {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .walk .walk-text {
   width: 50%;

@@ -63,6 +63,11 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     .flex(center; flex-start);
+    @media screen and (@phone){
+      margin-top: 20px;
+      padding: 20px;
+      .flex(column-reverse);
+    }
     .walk-text {
       width: 50%;
 
