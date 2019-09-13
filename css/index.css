@@ -189,6 +189,11 @@ nav div a {
   font-weight: bold;
   text-decoration: none;
 }
+@media screen and (max-width: 500px) {
+  nav div {
+    width: 90%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
