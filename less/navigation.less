@@ -1,19 +1,13 @@
 // Navigation code here
 nav{ 
-    max-width: 800px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
+    .width-centered();
+    .flex(column; flex-start; center);
     margin-top: 3vh;
     h1{
         font-size: 4rem;
     }
     div{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        .flex(row; space-between; flex-start);
         width: 50%;
         margin: 2vh;
         a{
