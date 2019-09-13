@@ -179,7 +179,7 @@ nav div {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   width: 50%;
   margin: 2vh;
 }
@@ -213,7 +213,7 @@ footer {
   flex-direction: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   width: 100%;
 }
 .home .space-images img {
@@ -239,7 +239,7 @@ footer {
   flex-direction: center;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
 }
 .home .walk .walk-text {
   width: 50%;
