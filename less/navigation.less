@@ -1,1 +1,27 @@
 // Navigation code here
+nav{ 
+    .width-centered();
+    .flex(column; flex-start; center; no-wrap);
+    margin-top: 3vh;
+    h1{
+        font-size: 4rem;
+    }
+    div{
+        .flex(row; space-between; flex-start);
+        width: 50%;
+        margin: 2vh;
+        a{
+            color: inherit;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}
+@media screen and (@phone){
+    nav{
+        div{
+            width: 75%
+        }
+    }
+}

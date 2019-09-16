@@ -1,1 +1,41 @@
 // Mixins Here
+.width-centered(){
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex(@direction){
+    display: flex;
+    flex-direction: @direction;
+}
+.flex(@direction; @justify){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+}
+.flex(@direction; @justify; @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+.flex(@direction; @justify; @align; @wrap){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+    flex-wrap: @wrap;
+}
+.button(@width; @v-padding; @h-padding; @font-size){
+    background-color: @ebony-clay;
+    width: @width;
+    padding: @v-padding @h-padding;
+    font-size: @font-size;
+    border-radius: 5px;
+    text-align: center;
+    color:white;
+    &:hover{
+        color: @ebony-clay;
+        background: white;
+    }
+}
